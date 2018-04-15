@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    {% block head %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/tornad0.css" type="text/css" media="all">
+        <meta charset="utf-8"> 
+        <style>
+.nav-link, .nav-item {
+  padding-right: 5rem;
+}
+
+footer {
+  align-items: stretch;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+a {
+  color: lightblue;
+}
+h4 {
+  text-align: center;
+}
+.label {
+    text-align: center;
+    margin-left: -30px;
+}
+p {
+  text-align: center;
+}
+.nav-link {
+  display: block;
+  width: 30px;
+  margin-right: auto;
+  align-items: flex-end;
+}
+#photo {
+  float: right;
+  align-items: flex-end;
+}
+#title {
+  font: bold;
+  font-size: 2rem;
+}
+.top {
+  position: fixed;
+  height: 75px;
+  z-index: 1000;
+  width: 100%;
+  opacity: 0.9;
+  display: block;
+  list-style-type: none;
+}
+</style>
+    <head>
+        <title>
+            {% block title %}
+            Jessica Robinson
+            {% endblock %}
+        </title>
+    </head>
+    {% endblock %}
+    <body>
+        {% block navbar %}
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+    </div>
+    <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="/home.html">Jessica Robinson</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Links</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+            {% endblock %}
+       
+        {% block content %}{% endblock %}
+        {% block footer %}
+                </main><footer>
+            <div class="card">
+ </div><footer class="row justify-content-center"><div class="card"> <div class="navbar bg-dark row justify-content-center"><p>Looking for the purrfect feline of your own? Check out the <a href="#">Humane Society</a>!</p>
+    </div></div></div></footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+        </footer>
+        {% endblock %}
+
+    </body>
+</html>
